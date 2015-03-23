@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#askName.xhtml" PATH="/askName.xhtml"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#askName.xhtml:0" NAME="item"
+   PATH="/askName.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="greetAction_called::#greet.xhtml"
+    NAME="output" PATH="/greet.xhtml" TARGET="rules:#greet.xhtml"
+    TITLE="greetAction_called" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#greet.xhtml" PATH="/greet.xhtml"
+  SHAPE="464,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#greet.xhtml:0" NAME="item"
+   PATH="/greet.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="askNameAction_called::#askName.xhtml"
+    NAME="output" PATH="/askName.xhtml" TARGET="rules:#askName.xhtml"
+    TITLE="askNameAction_called" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#askNameAndGreet.xhtml"
+  PATH="/askNameAndGreet.xhtml" SHAPE="256,177,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#askNameAndGreet.xhtml:0" NAME="item"
+   PATH="/askNameAndGreet.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="askNameAndGreet::#askNameAndGreet.xhtml"
+    NAME="output" PATH="/askNameAndGreet.xhtml"
+    TARGET="rules:#askNameAndGreet.xhtml" TITLE="askNameAndGreet" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.xhtml" PATH="/index.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#index.xhtml:0" NAME="item"
+   PATH="/index.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="askNameAction_called::#askName.xhtml"
+    NAME="output" PATH="/askName.xhtml" TARGET="rules:#askName.xhtml"
+    TITLE="askNameAction_called" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="askNameAndGreet::#askNameAndGreet.xhtml"
+    NAME="output1" PATH="/askNameAndGreet.xhtml"
+    TARGET="rules:#askNameAndGreet.xhtml" TITLE="askNameAndGreet" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
